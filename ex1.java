@@ -9,19 +9,16 @@ class Animal {
     }
 }
 class Dog extends Animal {
-    @Override
     void makeSound() {
-        System.out.println("woof");
+        System.out.println("woh woh ");
     }
 }
 class Cat extends Animal {
-    @Override
     void makeSound() {
-        System.out.println("meow");
+        System.out.println("meow meowww ");
     }
 }
 class Bird extends Animal {
-    @Override
     void makeSound() {
         System.out.println("teow ");
     }
@@ -36,6 +33,5 @@ public class ex1{
         for (Animal animal : animals ){
             animal.makeSound();
         }
-
     }
 }

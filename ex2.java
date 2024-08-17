@@ -11,7 +11,6 @@ class Circle extends Shape{
     Circle(double radius){
         this.radius = radius;
     }
-    @Override 
     double calculate_area(){
         return Math.PI * radius * radius;
     }
@@ -23,7 +22,6 @@ class Rectangle extends Shape{
         this.with = with;
         this.hight = hight;
     }
-    @Override
     double calculate_area(){
         return with * hight;
     }
@@ -35,19 +33,17 @@ class Triangle extends Shape{
         this.base = base;
         this.height = height;
     }
-    @Override
     double calculate_area(){
         return 0.5 * base * height;
     }
 }
-
 public class ex2 {
     public static void main(String[] args) {
     Shape[] shapes = new Shape[3];
     shapes[0] = new Circle(2);
     shapes[1] = new Rectangle(3, 4);
     shapes[2] = new Triangle(3, 4);
-    
+   
     int total_area = 0;
     for (Shape shape : shapes ){
         total_area += shape.calculate_area() ;

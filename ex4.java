@@ -28,8 +28,6 @@ class Car extends Vehicle {
         super(model, color, year);
         this.numberOfDoors = numberOfDoors;
     }
-
-    @Override
     void details() {
         System.out.println("Model: " + this.model);
         System.out.println("Year: " + this.year);
@@ -45,8 +43,6 @@ class Motorcycle extends Vehicle {
         super(model, color, year);
         this.engineCapacity = engineCapacity;
     }
-
-    @Override
     void details() {
         System.out.println("Model: " + this.model);
         System.out.println("Year: " + this.year);
@@ -59,8 +55,6 @@ class Truck extends Vehicle {
     Truck(String model, String color, int year) {
         super(model, color, year);
     }
-
-    @Override
     void details() {
         System.out.println("Model: " + this.model);
         System.out.println("Year: " + this.year);

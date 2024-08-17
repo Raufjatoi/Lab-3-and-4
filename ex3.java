@@ -9,24 +9,20 @@ import java.util.ArrayList;
 class Employee {
     String name;
     int ID, salary;
-
     Employee(String name, int ID, int salary) {
         this.name = name;
         this.ID = ID;
         this.salary = salary;
     }
 }
-
 class Manager extends Employee {
     Manager(String name, int ID, int salary) {
         super(name, ID, salary);
     }
-
     void addBonus(int bonus) {
         this.salary += bonus;
     }
 }
-
 class Developer extends Employee {
     Developer(String name, int ID, int salary) {
         super(name, ID, salary);
@@ -42,7 +38,6 @@ class Tester extends Employee {
         super(name, ID, salary);
     }
 }
-
 public class ex3 {
     public static void main(String[] args) {
         Developer rauf = new Developer("Rauf", 2, 10000);
@@ -60,7 +55,6 @@ public class ex3 {
         for (Employee e : list) {
             total += e.salary;
         }
-
         System.out.println("Total salary is " + total);
     }
 }
